@@ -39,26 +39,28 @@ int addition (int a1, int a2)
  *
  * param  a, b : nombres à multiplier
  * return : produit des nombres
- * 
- * À compléter
- * 
  */
+int multiplication (int m1, int m2)
+{
+    return m1 * m2;
+}
+
+int division (int dividande, int diviseur)
+{
+    return dividande / diviseur;
+}
+
 /*
- * multiplication soustraction, division
+ * soustraction, division
  *
  * Compléter le commentaire
  * Écrire la fonction
  */
 int soustraction (int s1, int s2)
 {
-    -->
+    return s1 - s2;
 }
-int multiplication (int m1, int m2)
-{
-    -->
-}
-int division (int dividande, int diviseur)
--->
+
 
 /*
  Déclaration de la fonction main, c'est la première fonction appelée
@@ -68,10 +70,10 @@ int division (int dividande, int diviseur)
 int main()
 {
     /* Déclarer deux entiers (int) appelés a et b */
-    -->
+    int a, b;
 
     /* Déclarer un entier (int) appelé résultat */
-    -->
+    int resultat;
 
     /* Sert à contenir le type d'opération à réaliser */
     /* TODO  mettre la commande dans un caractère */
@@ -84,13 +86,13 @@ int main()
     scanf("%d", &a);
 
     /* Afficher  Le message : "Deuxième nombre : " */
-    -->
+    printf("Deuxième nombre  : ");
 
     /* Lire le nombre dans la variable a */
-    -->
+    scanf("%d", &b);
 
     /* Afficher "Quelle opération voulez-vous ? +, -, * ou / :" */
-    -->
+    printf("Quelle opération voulez-vous ? +, -, * ou / :");
 
     /* Lire la réponse et la mettre dans op */
     scanf(" %s", message);
@@ -100,24 +102,27 @@ int main()
      * Il faut un aiguillage pour choisir l'appel de la fonction de calcul.
      * Cet aiguillage est fait avec "switch".
      */
-
     switch (message[0]) {
-
         case '+' : /* Cas addition */
             resultat = somme (a, b); /* Appel de la fonction d'additio */
             break; /* C'est fait, pas la peine de faire un autre calcul */
 
         /* Ajouter les autres calculs : soustraction, multiplication et division */
         case '-' :
-            -->
-
+            resultat = soustraction (a, b);
+            break;
+        case '*' :
+            resultat = multiplication (a, b);
+            break;
+        case '/' :
+            resultat = division (a, b);
+            break;
 
         default: /* C'est ballot, l'opération demandée n'est pas réalisable */
             resultat = 0;
             break;
     }
-    /*  Afficher le résulat */
-    -->
+    printf ("Résultat : %d\n", resultat);
 
     return 0;
 }

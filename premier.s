@@ -1,7 +1,7 @@
 	.file	"premier.c"
 	.text
 .Ltext0:
-	.file 0 "/home/manu/workspace/genie_logiciel/base_prog_01" "premier.c"
+	.file 0 "/home/manu/workspace/genie_logiciel/Bases_programmation" "premier.c"
 	.globl	somme
 	.type	somme, @function
 somme:
@@ -866,6 +866,6 @@ main:
 .LASF0:
 	.string	"premier.c"
 .LASF1:
-	.string	"/home/manu/workspace/genie_logiciel/base_prog_01"
+	.string	"/home/manu/workspace/genie_logiciel/Bases_programmation"
 	.ident	"GCC: (Debian 12.2.0-14) 12.2.0"
 	.section	.note.GNU-stack,"",@progbits

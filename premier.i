@@ -1,5 +1,5 @@
 # 0 "premier.c"
-# 1 "/home/manu/workspace/genie_logiciel/base_prog_01//"
+# 1 "/home/manu/workspace/genie_logiciel/Bases_programmation//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
