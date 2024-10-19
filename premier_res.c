@@ -18,12 +18,12 @@
 
 /*
  * addition
- * Cette fonction calcul la somme de deux nombres
+ * Cette fonction calcule la somme de deux nombres
  *
  * paramètres (entrées):
  *   a et b de types entiers (int)
  * Valeur retournée (sortie):
- *   somme de a et b
+ *   addition de a et b
  */
 int addition (int a1, int a2)
 {
@@ -104,7 +104,7 @@ int main()
      */
     switch (message[0]) {
         case '+' : /* Cas addition */
-            resultat = somme (a, b); /* Appel de la fonction d'additio */
+            resultat = addition (a, b); /* Appel de la fonction d'addition */
             break; /* C'est fait, pas la peine de faire un autre calcul */
 
         /* Ajouter les autres calculs : soustraction, multiplication et division */
